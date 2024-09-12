@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit";
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.bg-gradient-three-colors-vertical {
+  background: linear-gradient(to bottom, #020316, #8560bc, #020316);
+}
+
+/* Hide number input spinners for Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input spinners for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Additional class to hide spinners */
+.no-spinners::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinners {
+  -moz-appearance: textfield;
+}
+
+/* CALENDAR CSS */
+/* CalendarStyles.css */
+
+.react-calendar {
+  border: none;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: white; /* Dark background */
+  color: black; /* White text */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-calendar__navigation button {
+  color: black;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: #3c3c3c; /* Darker background for disabled buttons */
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.75em;
+  color: black;
+  border: none;
+  margin-top: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  text-align: center;
+  padding: 10px 6.6667px;
+  background: none;
+  color: black;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #3c3c3c; /* Darker background for disabled tiles */
+}
+
+.react-calendar__tile--now {
+  background: #c5c5c5; /* Highlight for the current day */
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background: #00aaff; /* Highlight for selected day */
+  color: white;
+}
+
+.react-calendar__tile--range {
+  background: #00aaff; /* Highlight for range of dates */
+  color: white;
+}
+
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+  background: #8560bc; /* Different highlight for start/end of range */
+  color: white;
+}
+
+.react-calendar__navigation {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8560bc;
+}
+
+.react-calendar__navigation__label__labelText {
+  color: white;
+}
+
+.react-calendar__navigation__arrow {
+  color: white !important;
+  font-size: 22px !important;
+}
+
+.react-calendar__navigation__next-button {
+  color: white !important;
+  font-size: 22px !important;
+}
